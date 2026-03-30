@@ -23,7 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # React build
-/octofit-tracker/frontend/build
+frontend/build
 
 # Environment
 .env

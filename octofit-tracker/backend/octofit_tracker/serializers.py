@@ -10,6 +10,7 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ['_id', 'username', 'email', 'password', 'age', 'fitness_level']
+        extra_kwargs = {'password': {'write_only': True}}
 
 class TeamSerializer(serializers.ModelSerializer):
     _id = serializers.SerializerMethodField()
